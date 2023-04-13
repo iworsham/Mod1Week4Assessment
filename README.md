@@ -29,21 +29,21 @@ Edit this `README.md` file - answer the BLANK questions before moving on to the 
     D. `Chair bench = new(24, true);`  
     
 2. Imagine you are interviewing for your first job.  The interviewer asks "What can you tell me about OOP?".  Write your response below:
-Object Oriented Programming, or better known as OOP is based on the concept of objects, each with its own properties and attributes
+Object Oriented Programming, or better known as OOP is based on the concept of objects, each with its own properties and attributes and also its own methods
 
 3. What is Automated Testing?
-
+Making sure your program is working as expected with no errors before being used in the program
 
 4. What are some benefits of creating tests for our projects?
-
+Helps find and removed errors before running into them when you run your main code. It also helps if you are on a big dev team with a big company you wont be able to run your code over and over again to find errors as it may conflict with your team. 
 
 5. When you create a test project, you do not immediately have access to the class(es) in the project that you are testing.  What do you need to do in order to have access to those classes?
-
+You must refer your test project to your main one. So the classes can be used, and mke sure they are public.
 6. Take a look at the class below.  Write out the **names** of each test you would write to verify that this class is working.
 ```c#
     public class Vehicle
     {
-        public int NumberOfWheels { get; }
+        public int NumberOfWheels { get; } ///WhenVehicleisMade_AreThePropertiesCorrect()
         public string Color { get; private set;  }
         public int MilesDriven { get; private set; }
 
@@ -54,18 +54,20 @@ Object Oriented Programming, or better known as OOP is based on the concept of o
             MilesDriven = 0;
         }
 
-        public string Sumary()
+        public string Sumary() DoesMethod_ReturnSummaryOfTheCar()
         {
             string summary = $"This {Color} vehicle has {NumberOfWheels} wheels, and has driven {MilesDriven} miles.";
             return summary;
         }
 
-        public void Drive()
+        public void Drive() ///DoesMethod_CalculateMilesDriven()
         {
             MilesDriven += 5;
         }
 
-        public void Paint(string newColor)
+        public void Paint(string newColor) ///DoesMethod_ChangeColorOfCar()
+        
+        
         {
             Color = newColor;
         }
