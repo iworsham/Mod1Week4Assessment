@@ -25,11 +25,11 @@ Edit this `README.md` file - answer the BLANK questions before moving on to the 
     Which of the following is NOT a valid way to create an instance of Chair? And why does this option not work?  
     A. `var bench = new Chair(24, true);`  
     B. `Chair bench = new Chair(24, true);`  
-    C. `var bench = new(24, true);`  
+    C. `var bench = new(24, true);`  //C. This doesnt work because you are not using the class Chair to create this instance. I will create variable bench but not as a instance of Chair.
     D. `Chair bench = new(24, true);`  
     
 2. Imagine you are interviewing for your first job.  The interviewer asks "What can you tell me about OOP?".  Write your response below:
-
+Object Oriented Programming, or better known as OOP is based on the concept of objects, each with its own properties and attributes
 
 3. What is Automated Testing?
 
